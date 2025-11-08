@@ -5,7 +5,7 @@ const jobStatusRoutes = require('./routes/jobStatusRoutes');
 const cors = require('cors');
 
 const app = express();
-app.use(cors({ origin: ['http://localhost:5173', 'http://localhost:3000'], methods: ['GET'], allowedHeaders: ['Content-Type'] }));
+app.use(cors({ origin: ['http://localhost:5173', 'http://localhost:3000', 'https://darkturquoise-chimpanzee-333233.hostingersite.com', 'https://agentcallback.vercel.app', '*'], methods: ['GET'], allowedHeaders: ['Content-Type'] }));
 app.use(express.json());
 
 app.use('/api/jobs', jobStatusRoutes);
